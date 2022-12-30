@@ -1,7 +1,7 @@
 pipeline {
     agent {
         docker {
-            label 'slave'
+            label 'master'
             image 'node:16.19.0-slim'
             args '-p 3000:3000'
         }
