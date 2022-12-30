@@ -2,7 +2,7 @@ pipeline {
     agent {
         docker {
             label 'slave'
-            image 'node:lts-buster-slim'
+            image 'node:16.19.0-slim'
             args '-p 3000:3000'
         }
     }
