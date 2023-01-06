@@ -12,6 +12,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
+								sh 'echo $arg1'
                 sh 'npm install'
             }
         }
